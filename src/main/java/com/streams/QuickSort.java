@@ -1,8 +1,6 @@
 package com.streams;
 
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.stream.Collectors;
 
 public class QuickSort {
     public Integer[] sort(Integer[] arr) {
@@ -13,11 +11,11 @@ public class QuickSort {
     private void quickSort(Integer[] arr, int low, int high) {
         if (low < high) {
             int pi = partition(arr, low, high);
-            System.out.println(pi + "\t" + Arrays.stream(arr).map(Integer::intValue).collect(Collectors.toList()) + "\t" + low + "\t" + high);
+            System.out.println(pi + "\t" + Arrays.asList(arr) + "\t" + low + "\t" + high);
             quickSort(arr, low, pi - 1);
-            System.out.println("\t" + Arrays.stream(arr).map(Integer::intValue).collect(Collectors.toList()) + "\t" + low + "\t" + (pi - 1));
+            System.out.println("\t" + Arrays.asList(arr) + "\t" + low + "\t" + (pi - 1));
             quickSort(arr, pi + 1, high);
-            System.out.println("\t" + Arrays.stream(arr).map(Integer::intValue).collect(Collectors.toList()) + "\t" + (pi + 1) + "\t" + high);
+            System.out.println("\t" + Arrays.asList(arr) + "\t" + (pi + 1) + "\t" + high);
         }
     }
 
