@@ -2,7 +2,16 @@ package com.streams;
 
 import java.util.Arrays;
 
-public class MergeSort {
+/**
+ * Time Complexity
+ * Happy case:     Ω(n log(n))
+ * Average case:   θ(n log(n))
+ * Worst case:     θ(n log(n))
+ * Space Complexity
+ * O(n)
+ **/
+public class MergeSort implements SortAlgorithm{
+    @Override
     public void sort(Integer[] arr) {
 
         mergeSort(arr, 0, arr.length - 1);
@@ -18,8 +27,9 @@ public class MergeSort {
     }
 
     private void merge(Integer[] array, int left, int right, int middle) {
+        middle++;
         Integer[] L = Arrays.copyOfRange(array, left, middle);
-        Integer[] R = Arrays.copyOfRange(array, middle, right);
+        Integer[] R = Arrays.copyOfRange(array, middle, right+1);
         int i = 0;
         int j = 0;
         int k = left;

@@ -1,12 +1,16 @@
 package com.streams;
-
-import java.util.Arrays;
-import java.util.List;
-
-public class QuickSort {
-    public Integer[] sort(Integer[] arr) {
+/**
+ * Time Complexity
+ * Happy case:     Ω(n log(n))
+ * Average case:   θ(n log(n))
+ * Worst case:     O(n^2)
+ * Space Complexity
+ * O(n)
+ **/
+public class QuickSort implements SortAlgorithm{
+    @Override
+    public void sort(Integer[] arr) {
         quickSort(arr, 0, arr.length - 1);
-        return arr;
     }
 
     private void quickSort(Integer[] arr, int low, int high) {

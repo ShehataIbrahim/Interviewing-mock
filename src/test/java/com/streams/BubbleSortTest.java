@@ -9,13 +9,13 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MergeSortTest {
+class BubbleSortTest {
 
     @Test
     void sort() {
         Integer[] array = {9, 3, -1, 5, 13, 4, 2};
-        MergeSort mergeSort = new MergeSort();
-        mergeSort.sort(array);
+        BubbleSort bubbleSort = new BubbleSort();
+        bubbleSort.sort(array);
         Arrays.stream(array).forEach(i -> System.out.print(i + " "));
         assertTrue(Comparators.isInOrder(List.of(array), Comparator.naturalOrder()));
     }
