@@ -43,12 +43,10 @@ public class MergeSort implements SortAlgorithm{
             k++;
         }
         while (i < L.length) {
-            array[k] = L[i];
-            i++;
+            array[k++] = L[i++];
         }
         while (j < R.length) {
-            array[k] = R[j];
-            j++;
+            array[k++] = R[j++];
         }
 
     }

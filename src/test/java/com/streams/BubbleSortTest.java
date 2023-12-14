@@ -2,10 +2,15 @@ package com.streams;
 
 import org.junit.jupiter.api.Test;
 
-class BubbleSortTest implements SortAlgorithmTest{
+class BubbleSortTest implements SortAlgorithmTest {
 
     @Test
-    void sort() {
-        sort(new BubbleSort());
+    void sortOddArray() {
+        sortOddArray(new BubbleSort());
+    }
+
+    @Test
+    void sortEvenArray() {
+        sortEvenArray(new BubbleSort());
     }
 }

@@ -5,7 +5,12 @@ import org.junit.jupiter.api.Test;
 class MergeSortTest implements SortAlgorithmTest {
 
     @Test
-    void sort() {
-        sort(new MergeSort());
+    void sortOddArray() {
+        sortOddArray(new MergeSort());
+    }
+
+    @Test
+    void sortEvenArray() {
+        sortEvenArray(new MergeSort());
     }
 }
