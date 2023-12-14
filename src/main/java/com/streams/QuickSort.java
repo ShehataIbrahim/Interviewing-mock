@@ -36,10 +36,4 @@ public class QuickSort implements SortAlgorithm{
         swap(arr, high, k);
         return k;
     }
-
-    private void swap(Integer[] arr, int k, int i) {
-        int temp = arr[k];
-        arr[k] = arr[i];
-        arr[i] = temp;
-    }
 }

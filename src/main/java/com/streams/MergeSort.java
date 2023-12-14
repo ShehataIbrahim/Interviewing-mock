@@ -27,9 +27,8 @@ public class MergeSort implements SortAlgorithm{
     }
 
     private void merge(Integer[] array, int left, int right, int middle) {
-        middle++;
-        Integer[] L = Arrays.copyOfRange(array, left, middle);
-        Integer[] R = Arrays.copyOfRange(array, middle, right+1);
+        Integer[] L = Arrays.copyOfRange(array, left, middle+1);
+        Integer[] R = Arrays.copyOfRange(array, middle+1, right+1);
         int i = 0;
         int j = 0;
         int k = left;

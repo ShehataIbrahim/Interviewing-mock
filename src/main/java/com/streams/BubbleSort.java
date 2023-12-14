@@ -30,10 +30,4 @@ public class BubbleSort implements SortAlgorithm {
             }
         }
     }
-
-    private void swap(Integer[] arr, int k, int i) {
-        int temp = arr[k];
-        arr[k] = arr[i];
-        arr[i] = temp;
-    }
 }
