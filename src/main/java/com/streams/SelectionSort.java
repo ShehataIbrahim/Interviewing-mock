@@ -1,5 +1,12 @@
 package com.streams;
-
+/**
+ * Time Complexity
+ * Happy case:     Ω(n^2)
+ * Average case:   θ(n^2)
+ * Worst case:     O(n^2)
+ * Space Complexity
+ * O(1)
+ **/
 public class SelectionSort implements SortAlgorithm{
     @Override
     public void sort(Integer[] arr) {

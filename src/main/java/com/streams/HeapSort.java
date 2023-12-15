@@ -1,5 +1,12 @@
 package com.streams;
-
+/**
+ * Time Complexity
+ * Happy case:     Ω(n log(n))
+ * Average case:   θ(n log(n))
+ * Worst case:     O(n log(n))
+ * Space Complexity
+ * 	O(1)
+ **/
 public class HeapSort implements SortAlgorithm {
     @Override
     public void sort(Integer[] arr) {
