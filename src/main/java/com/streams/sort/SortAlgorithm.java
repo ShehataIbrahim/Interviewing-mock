@@ -1,4 +1,4 @@
-package com.streams;
+package com.streams.sort;
 
 public interface SortAlgorithm {
     void sort(Integer[] arr);

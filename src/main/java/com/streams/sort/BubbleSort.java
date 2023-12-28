@@ -1,4 +1,4 @@
-package com.streams;
+package com.streams.sort;
 
 /**
  * Time Complexity

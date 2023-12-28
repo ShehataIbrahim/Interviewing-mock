@@ -1,4 +1,4 @@
-package com.streams;
+package com.streams.sort;
 
 import com.google.common.collect.Comparators;
 
