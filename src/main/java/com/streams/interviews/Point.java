@@ -1,31 +1,19 @@
 package com.streams.interviews;
 
 public class Point {
-    private double x;
-    private double y;
-    private double distance;
-    private Point vertex;
-
-    public Point(double x, double y, Point vertex) {
-        this.x = x;
-        this.y = y;
-        distance = Math.pow(x, 2) + Math.pow(y, 2);
-        this.vertex=vertex;
-
-    }
-    public double distanceToVertex()
+    private final double x;
+    private final double y;
+    public double distanceToVertex(Point vertex)
     {
-        return vertex.getDistance()-distance;
+        double distX=vertex.x-x;
+        double distY=vertex.y-y;
+        return  Math.pow(distX, 2) + Math.pow(distY, 2);
     }
 
     public Point(double x, double y) {
         this.x = x;
         this.y = y;
-        distance = Math.pow(x, 2) + Math.pow(y, 2);
-    }
 
-    public double getDistance() {
-        return distance;
     }
 
     @Override
@@ -33,7 +21,6 @@ public class Point {
         return "Point{" +
                 "x=" + x +
                 ", y=" + y +
-                ", distance=" + distanceToVertex() +
                 '}';
     }
 }

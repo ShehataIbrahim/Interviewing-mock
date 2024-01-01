@@ -1,4 +1,4 @@
-package com.streams.interviews;
+package com.streams.interviews.distancek;
 
 import java.util.*;
 

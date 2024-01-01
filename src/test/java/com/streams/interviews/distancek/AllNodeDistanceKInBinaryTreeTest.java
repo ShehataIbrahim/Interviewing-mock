@@ -1,10 +1,10 @@
-package com.streams.interviews;
+package com.streams.interviews.distancek;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class AllNodeDistanceKInBinaryTreeTest {
 

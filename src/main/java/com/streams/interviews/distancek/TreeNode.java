@@ -1,4 +1,4 @@
-package com.streams.interviews;
+package com.streams.interviews.distancek;
 
 public class TreeNode {
     int val;
